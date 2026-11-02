@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f7f8fa">
+  <meta name="description" content="张钦睿，吉林大学自动化专业本科生。关注机器人运动控制、嵌入式系统与数学建模。">
+  <meta property="og:title" content="张钦睿 | 机器人与运动控制">
+  <meta property="og:description" content="从数学模型到真实运动，探索机器人、控制与嵌入式系统。">
+  <meta property="og:type" content="website">
+  <title>张钦睿 | 机器人与运动控制</title>
+  <link rel="icon" href="./assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="./styles.css">
+  <script src="./profile.js" defer></script>
+  <script src="./app.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">跳到正文</a>
+  <header class="site-header">
+    <a class="wordmark" href="#home" aria-label="张钦睿主页"><span class="brand-icon">z<span>.</span></span><span data-profile="name">张钦睿</span><span class="wordmark-sub">/ PERSONAL SITE</span></a>
+    <button class="menu-toggle" aria-expanded="false" aria-controls="navigation">菜单 <span aria-hidden="true">☰</span></button>
+    <nav id="navigation" aria-label="主要导航">
+      <a href="#about">关于</a><a href="#projects">项目</a><a href="#experience">教育与技能</a><a class="nav-contact" href="#contact">联系我 <span aria-hidden="true">↗</span></a>
+    </nav>
+  </header>
+  <main id="main">
+    <section class="hero section-shell" id="home" aria-labelledby="hero-title">
+      <div class="hero-copy">
+        <p class="eyebrow"><span class="status-dot"></span> 吉林大学 · 自动化专业本科生</p>
+        <h1 id="hero-title"><span data-profile="name">张钦睿</span><span class="latin-name" data-profile="englishName">Qinrui Zhang</span></h1>
+        <h2>让模型走向<span class="blue-text">真实世界。</span></h2>
+        <p class="hero-intro" data-profile="intro">关注机器人运动控制、嵌入式系统与数学建模。从一行控制代码到机器人的稳定步伐，在理论与实机之间不断探索。</p>
+        <div class="hero-actions"><a class="button button-primary" href="#projects">探索我的项目 <span aria-hidden="true">↗</span></a><a class="text-link" href="./assets/resume.pdf" download="张钦睿-个人简历.pdf">下载简历 <span aria-hidden="true">↓</span></a></div>
+        <div class="hero-footnote"><span>ROBOTICS</span><span>CONTROL</span><span>EMBEDDED SYSTEMS</span></div>
+      </div>
+      <div class="hero-art" aria-label="机器人运动控制示意图">
+        <div class="art-heading"><span><i class="status-dot"></i> MOTION LAB</span><span>FIG. 001</span></div>
+        <svg class="robot-diagram" viewBox="0 0 520 425" role="img" aria-labelledby="robot-title">
+          <title id="robot-title">机器人关节、反馈回路和步态轨迹的技术示意，非实验数据</title>
+          <defs><pattern id="grid" width="24" height="24" patternUnits="userSpaceOnUse"><path d="M24 0H0V24" fill="none" stroke="#dce3ed" stroke-width=".6"/></pattern><linearGradient id="body-fill" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#eef3ff"/><stop offset="1" stop-color="#ccdcff"/></linearGradient></defs>
+          <rect width="520" height="425" fill="url(#grid)"/>
+          <g fill="none" stroke="#aebfda" stroke-width="1"><ellipse cx="263" cy="348" rx="140" ry="34"/><ellipse cx="263" cy="348" rx="99" ry="22" stroke-dasharray="4 5"/><path d="M80 348h365M263 32v354" stroke-dasharray="3 6"/></g>
+          <g class="robot" fill="url(#body-fill)" stroke="#2456bb" stroke-width="2.2" stroke-linejoin="round">
+            <path d="M237 77q24-13 48 0l5 30q-28 17-56 0z"/><path d="M246 111v17h29v-17"/>
+            <path d="M226 132q36-12 73 0l-10 85q-24 13-53 0z"/>
+            <path d="M222 141l-24 7-17 51 19 8 31-50z"/><path d="M181 205l-6 52 18 5 12-52z"/>
+            <path d="M303 141l24 7 17 51-19 8-31-50z"/><path d="M324 210l12 52 18-5-6-52z"/>
+            <path d="M238 221l-6 49 20 5 13-51z"/><path d="M233 282l-14 49 21 4 15-51z"/><path d="M219 334l-14 12v9h39l-4-18z"/>
+            <path d="M270 224l14 48 20-6-15-45z"/><path d="M286 281l15 50 21-6-17-50z"/><path d="M301 335v17h42v-9l-19-14z"/>
+            <circle cx="242" cy="277" r="10" fill="#f7faff"/><circle cx="295" cy="275" r="10" fill="#f7faff"/>
+            <circle cx="192" cy="205" r="8" fill="#f7faff"/><circle cx="336" cy="205" r="8" fill="#f7faff"/>
+          </g>
+          <g fill="#2860d5"><circle cx="249" cy="91" r="3"/><circle cx="274" cy="91" r="3"/><circle cx="263" cy="171" r="4"/></g>
+          <g fill="none" stroke="#7195df" stroke-width="1"><path d="M267 171h91l20-24h82"/><path d="M241 277h-73l-30-35H58"/><path d="M295 275h55l24 28h77"/><circle cx="263" cy="171" r="15" class="sensor-ring"/><path d="M116 98h64l53-8"/></g>
+          <g fill="#51709e" font-family="monospace" font-size="10"><text x="382" y="138">IMU / FEEDBACK</text><text x="61" y="232">GAIT CONTROL</text><text x="379" y="296">JOINT SPACE</text><text x="83" y="91">PERCEPTION</text><text x="26" y="401">x →</text><text x="457" y="401">z ↑</text></g>
+          <path d="M106 367q33-23 66 0t66 0 66 0 66 0 66 0" fill="none" stroke="#2458d3" stroke-width="1.5" stroke-dasharray="5 5" class="trajectory"/>
+        </svg>
+        <div class="art-caption"><span>感知 → 决策 → 控制 → 反馈</span><span>运动控制示意</span></div>
+      </div>
+    </section>
+    <section class="metrics section-shell" aria-label="学业与竞赛亮点">
+      <div><span class="metric-number">3.87<span>/ 4.00</span></span><span class="metric-label">本科 GPA</span></div>
+      <div><span class="metric-number">1<span>/ 108</span></span><span class="metric-label">专业排名</span></div>
+      <div><span class="metric-number metric-words">国家一等奖</span><span class="metric-label">中国机器人及人工智能大赛 · 2026</span></div>
+      <div><span class="metric-number">Finalist</span><span class="metric-label">美国大学生数学建模竞赛 · 2026</span></div>
+    </section>
+    <section class="about section-shell section-space" id="about" aria-labelledby="about-title">
+      <div class="section-label"><span>01 / ABOUT ME</span><h2 id="about-title">关于我</h2></div>
+      <div class="about-body"><h3>从理解系统，<br>到让系统真正运行。</h3><div><p>我是张钦睿，目前就读于吉林大学自动化专业。我的项目实践围绕机器人感知与运动控制展开，也涉及嵌入式开发、姿态估计和数学建模。</p><p>我参与过 NAO 人形机器人的视觉循迹与底层步态控制，也在两轮轮腿平台上完成多环 PID、跳跃状态机和实车调试。在建模项目中，我负责英文论文组织与撰写，将模型、数值方法与实验结果清晰地串联起来。</p><div class="interest-tags"><span>机器人运动控制</span><span>嵌入式系统</span><span>数学建模</span></div></div></div>
+    </section>
+    <section class="projects section-shell section-space" id="projects" aria-labelledby="projects-title">
+      <div class="section-heading"><div class="section-label"><span>02 / SELECTED PROJECTS</span><h2 id="projects-title">在实践中探索</h2></div><p>把问题拆解，把想法落地。</p></div>
+      <article class="project project-featured">
+        <div class="project-visual nao-visual" aria-hidden="true"><div class="visual-top">01 / HUMANOID ROBOTICS <span>2026</span></div><div class="track-lines"><i></i><i></i><i></i></div><div class="nao-word">NAO<span>V6</span></div><div class="visual-bottom"><span>VISION + LOCOMOTION</span><span>12 ms / CONTROL LOOP</span></div></div>
+        <div class="project-content"><div class="project-kicker"><span>机器人 · 运动控制</span><span class="award-badge">国家一等奖</span></div><h3>让人形机器人，<br>跑得快，也走得稳。</h3><p>中国机器人及人工智能大赛 · 仿人短跑。作为队长，负责 NAO V6 的运动控制与视觉循迹，打通从赛道识别到底层步态控制的完整链路。</p><div class="tech-tags"><span>C++</span><span>LoLA</span><span>HTWKMotion</span><span>Ubuntu</span></div><button class="project-button" data-project="nao">查看项目详情 <span aria-hidden="true">↗</span></button></div>
+      </article>
+      <div class="project-grid">
+        <article class="project project-small"><div class="project-visual wheel-visual" aria-hidden="true"><div class="visual-top">02 / EMBEDDED CONTROL <span>2026</span></div><svg viewBox="0 0 440 210"><path d="M35 173h110l28-29h89l30 29h110" fill="none" stroke="#a8bbce" stroke-width="2"/><g stroke="#294f73" stroke-width="5" fill="#f2f7fb"><circle cx="154" cy="142" r="29"/><circle cx="282" cy="142" r="29"/><path d="M154 142l33-57h65l30 57M187 85l31 57 34-57" fill="none"/><rect x="187" y="55" width="65" height="31" rx="5"/></g><path d="M218 33v114M119 142h200" stroke="#4e83ac" stroke-dasharray="4 5" fill="none"/><circle cx="218" cy="70" r="4" fill="#2458d3"/></svg><div class="visual-bottom"><span>BALANCE / JUMP / RECOVERY</span><span>C + PID</span></div></div><div class="project-content"><div class="project-kicker"><span>轮腿机器人 · 嵌入式开发</span></div><h3>在动态中，寻找平衡。</h3><p>两轮轮腿平衡车运动控制与越障。实现多环 PID、跳跃状态机、Mahony 姿态解算与电机闭环控制，并完成实车调试。</p><div class="tech-tags"><span>C</span><span>PID</span><span>IMU</span><span>FOC</span></div><button class="project-button" data-project="wheel">查看项目详情 <span aria-hidden="true">↗</span></button></div></article>
+        <article class="project project-small"><div class="project-visual model-visual" aria-hidden="true"><div class="visual-top">03 / MATHEMATICAL MODELING <span>2026</span></div><div class="model-equation">dSOC<span>/</span>dt <span>=</span> −I(t)<span>/</span>Q<sub>eff</sub></div><svg viewBox="0 0 440 110"><path d="M40 10v76h360" fill="none" stroke="#bfc4ab"/><path d="M45 20C110 21 107 43 165 44S245 61 278 64 345 75 395 82" fill="none" stroke="#68794b" stroke-width="3"/><path d="M45 16C110 17 107 39 165 40S245 57 278 60 345 71 395 78L395 88C345 81 310 72 278 70S205 50 165 50 110 27 45 26Z" fill="#68794b" opacity=".12"/></svg><div class="visual-bottom"><span>RHIRM / BATTERY MODEL</span><span>模型示意 · 非实验曲线</span></div></div><div class="project-content"><div class="project-kicker"><span>数学建模 · 科研写作</span><span class="award-badge olive">MCM Finalist</span></div><h3>用模型，理解电池寿命。</h3><p>美国大学生数学建模竞赛。围绕智能手机续航预测与功耗优化，主要承担英文论文撰写、结构统筹及模型结果分析。</p><div class="tech-tags"><span>Thevenin</span><span>RK4</span><span>Monte Carlo</span><span>LaTeX</span></div><button class="project-button" data-project="mcm">查看项目详情 <span aria-hidden="true">↗</span></button></div></article>
+      </div>
+    </section>
+    <section class="experience section-shell section-space" id="experience" aria-labelledby="experience-title"><div class="section-heading"><div class="section-label"><span>03 / EDUCATION & TOOLKIT</span><h2 id="experience-title">知识，是实践的起点。</h2></div></div><div class="experience-grid"><div class="education-block"><p class="block-label">教育背景</p><div class="school-row"><div><h3>吉林大学</h3><p>自动化 · 本科在读</p></div><span>2024 — 至今</span></div><div class="score-row"><span>平均成绩 <strong>91.99 / 100</strong></span><span>CET-6 <strong>526</strong></span></div><p class="block-label course-label">核心课程</p><dl class="courses"><div><dt>复变函数与积分变换</dt><dd>99.8</dd></div><div><dt>工程力学</dt><dd>98.2</dd></div><div><dt>模拟电子电路</dt><dd>97.2</dd></div><div><dt>微机原理与接口技术</dt><dd>95.8</dd></div></dl></div><div class="toolkit"><div class="skill-row"><span>01</span><div><h3>编程与工程开发</h3><p>C / C++ / Python<br>Linux / Ubuntu · Git · SSH · 交叉编译</p></div></div><div class="skill-row"><span>02</span><div><h3>机器人与嵌入式</h3><p>多环 PID · 状态机 · IMU · 编码器<br>有刷 / 无刷电机 · 机器人端部署与实机调试</p></div></div><div class="skill-row"><span>03</span><div><h3>研究与表达</h3><p>数学建模 · 英文科技写作 · 结果分析<br>科技图表组织 · LaTeX 排版</p></div></div></div></div></section>
+    <section class="contact section-shell section-space" id="contact" aria-labelledby="contact-title"><p class="eyebrow">04 / LET'S CONNECT</p><h2 id="contact-title">下一个想法，<br>从一次交流开始<span>↗</span></h2><p>欢迎交流机器人、运动控制与嵌入式开发，<br class="desktop-break">也欢迎关于项目与研究的讨论。</p><div class="contact-actions"><a class="email-link" data-email href="mailto:piyusikao@outlook.com">piyusikao@outlook.com <span aria-hidden="true">↗</span></a><button class="copy-button" id="copy-email" aria-label="复制邮箱地址">复制邮箱</button></div><a class="github-link" data-github href="https://github.com/AvidDragon" target="_blank" rel="noopener noreferrer">GitHub / AvidDragon <span aria-hidden="true">↗</span></a><p id="copy-status" class="copy-status" role="status" aria-live="polite"></p></section>
+  </main>
+  <footer class="site-footer section-shell"><a class="wordmark" href="#home"><span class="brand-icon">z<span>.</span></span><span data-profile="name">张钦睿</span></a><span>© <span id="year">2026</span> Qinrui Zhang</span><a href="#home">回到顶部 ↑</a></footer>
+  <dialog id="project-dialog" aria-labelledby="dialog-title"><div class="dialog-top"><span id="dialog-kicker"></span><button id="close-dialog" aria-label="关闭项目详情">✕</button></div><h2 id="dialog-title"></h2><div id="dialog-body"></div></dialog>
+</body>
+</html>
